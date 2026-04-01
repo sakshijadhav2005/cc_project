@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Story | About EcoHarvest</title>
+    <meta name="description" content="Discover the origins of EcoHarvest, our mission to revolutionize agriculture, and the team driving the future of green farming machinery.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .page-hero {
+            padding: 12rem 5% 6rem;
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1595113316349-9fa4eb24f884?q=80&w=2072&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+        }
+        .page-hero h1 { font-size: 3.5rem; margin-bottom: 1rem; }
+        
+        .about-grid {
+            padding: 8rem 5%;
+            display: flex;
+            align-items: center;
+            gap: 5rem;
+            background: white;
+        }
+        .about-text { flex: 1; }
+        .about-image { flex: 0.8; }
+        .about-image img {
+            width: 100%;
+            border-radius: 40px;
+            box-shadow: 20px 20px 60px rgba(0,0,0,0.1);
+        }
+        
+        .timeline {
+            padding: 8rem 5%;
+            background: #f8f9fa;
+        }
+        .timeline-item {
+            display: flex;
+            margin-bottom: 4rem;
+            gap: 3rem;
+            position: relative;
+        }
+        .timeline-year { font-family: var(--font-heading); font-size: 2.5rem; color: var(--sage-green); min-width: 120px; }
+        .timeline-content {
+            border-left: 2px solid var(--sage-green);
+            padding-left: 2rem;
+            padding-bottom: 1rem;
+        }
+        .timeline-content h3 { margin-bottom: 1rem; color: var(--primary-green); }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="scrolled">
+        <div class="logo">ECOHARVEST</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="equipment.html">Equipment</a></li>
+            <li><a href="sustainability.html">Sustainability</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+        </ul>
+        <div class="nav-actions">
+            <a href="#" class="nav-login" id="openAuth">Sign In</a>
+            <a href="contact.html" class="cta-button">Contact Sales</a>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <header class="page-hero">
+        <h1>Our Story</h1>
+        <p>A decade of innovation, dedicated to the future of farming.</p>
+    </header>
+
+    <!-- About Section -->
+    <section class="about-grid">
+        <div class="about-text reveal">
+            <span class="tag">Since 2016</span>
+            <h2 style="font-size: 2.5rem; color: var(--primary-green); margin: 1rem 0 2rem;">Revolutionizing the Soil</h2>
+            <p style="font-size: 1.1rem; color: var(--text-muted);">EcoHarvest was founded with a single mission: to create machinery that respects the earth while empowering the farmer. We believe the future of agriculture isn't just about output, it's about balance.</p>
+            <p style="font-size: 1.1rem; color: var(--text-muted); margin-top: 1.5rem;">From our humble beginnings in a small workshop to becoming the global leader in sustainable agri-tech, our focus remains on engineering machines that reduce carbon footprints without compromising power.</p>
+        </div>
+        <div class="about-image reveal">
+            <img src="https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?q=80&w=2070&auto=format&fit=crop" alt="Our Founders">
+        </div>
+    </section>
+
+    <!-- Timeline -->
+    <section class="timeline">
+        <div class="section-header reveal">
+            <h2>The Journey</h2>
+            <p>Milestones that define our commitment.</p>
+        </div>
+        
+        <div class="timeline-item reveal">
+            <div class="timeline-year">2016</div>
+            <div class="timeline-content">
+                <h3>EcoHarvest Idea Born</h3>
+                <p>Company founded by agricultural engineers aiming to replace diesel tractors with electric prototypes.</p>
+            </div>
+        </div>
+        
+        <div class="timeline-item reveal">
+            <div class="timeline-year">2019</div>
+            <div class="timeline-content">
+                <h3>Sovereign-E Launch</h3>
+                <p>The first fully electric, high-performance tractor hits the market, winning the Global Innovation Award.</p>
+            </div>
+        </div>
+        
+        <div class="timeline-item reveal">
+            <div class="timeline-year">2023</div>
+            <div class="timeline-content">
+                <h3>Global Expansion</h3>
+                <p>EcoHarvest fleet reaches 15+ countries, saving more than 500,000 tons of CO2 emissions worldwide.</p>
+            </div>
+        </div>
+        
+        <div class="timeline-item reveal">
+            <div class="timeline-year">2026</div>
+            <div class="timeline-content">
+                <h3>The AI Integration</h3>
+                <p>Our fleet becomes fully integrated with AI-Soil-Sense, optimizing crop yields and water usage like never before.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h2>ECOHARVEST</h2>
+                <p style="color: var(--text-muted);">Innovating for the next generation of farmers and the planet we share.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Fleet</h4>
+                <ul>
+                    <li><a href="equipment.html">Tractors</a></li>
+                    <li><a href="equipment.html">Harvesters</a></li>
+                    <li><a href="equipment.html">Drones</a></li>
+                    <li><a href="equipment.html">Irrigation</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="about.html">Our Story</a></li>
+                    <li><a href="sustainability.html">Sustainability Report</a></li>
+                    <li><a href="contact.html">Careers</a></li>
+                    <li><a href="contact.html">Press</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Follow Us</h4>
+                <div style="display: flex; gap: 1rem; color: var(--text-muted);">
+                    <i data-lucide="twitter"></i>
+                    <i data-lucide="instagram"></i>
+                    <i data-lucide="linkedin"></i>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2026 EcoHarvest Agricultural Systems. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Auth Modal -->
+    <div class="modal-overlay" id="authModal">
+        <div class="modal-container">
+            <button class="modal-close" id="closeAuth">&times;</button>
+            <div class="auth-box" id="loginBox">
+                <h2>Welcome Back</h2>
+                <button type="submit" class="cta-button" style="width: 100%;">Sign In</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

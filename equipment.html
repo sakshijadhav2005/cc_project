@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Sustainable Fleet | EcoHarvest</title>
+    <meta name="description" content="Explore EcoHarvest's full range of sustainable farm equipment including electric tractors, hybrid harvesters, and precision drones.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .page-hero {
+            padding: 12rem 5% 6rem;
+            background: linear-gradient(rgba(27, 67, 50, 0.9), rgba(27, 67, 50, 0.7)), url('https://images.unsplash.com/photo-1500382017468-9049fee74a52?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+        }
+        .page-hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+        .filter-nav {
+            padding: 2rem 5%;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            background: white;
+            border-bottom: 1px solid #eee;
+            position: sticky;
+            top: 70px;
+            z-index: 900;
+        }
+        .filter-btn {
+            background: transparent;
+            border: 1px solid #ddd;
+            padding: 0.6rem 1.5rem;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: var(--transition);
+        }
+        .filter-btn.active, .filter-btn:hover {
+            background: var(--primary-green);
+            color: white;
+            border-color: var(--primary-green);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="scrolled">
+        <div class="logo">ECOHARVEST</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="equipment.html" class="active">Equipment</a></li>
+            <li><a href="sustainability.html">Sustainability</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+        <div class="nav-actions">
+            <a href="#" class="nav-login" id="openAuth">Sign In</a>
+            <a href="contact.html" class="cta-button">Contact Sales</a>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <header class="page-hero">
+        <h1>Sustainable Fleet</h1>
+        <p>Engineered for the farmer of tomorrow, built for the planet today.</p>
+    </header>
+
+    <!-- Filter Nav -->
+    <div class="filter-nav">
+        <button class="filter-btn active">All Equipment</button>
+        <button class="filter-btn">Tractors</button>
+        <button class="filter-btn">Harvesters</button>
+        <button class="filter-btn">Drones</button>
+        <button class="filter-btn">Irrigation</button>
+    </div>
+
+    <!-- Equipment Section -->
+    <section class="equipment" style="background: white;">
+        <div class="equipment-grid">
+            <!-- Tractor -->
+            <div class="equipment-card reveal">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1592982537447-7440770cbfc9?q=80&w=2070&auto=format&fit=crop" alt="Electric Tractor">
+                </div>
+                <div class="card-content">
+                    <span class="tag">Electric</span>
+                    <h3>Sovereign-E Tractor</h3>
+                    <p>Fully electric heavy-duty tractor with 12-hour battery life and autonomous navigation capabilities.</p>
+                    <a href="#" class="cta-button view-details" 
+                       data-title="Sovereign-E Tractor" 
+                       data-desc="Fully electric heavy-duty tractor with 12-hour battery life and autonomous navigation capabilities."
+                       data-specs="HP: 450 | Battery: 500kWh | Autonomy: Level 4"
+                       style="padding: 0.6rem 1.2rem; font-size: 0.9rem;">View Details</a>
+                </div>
+            </div>
+
+            <!-- Harvester -->
+            <div class="equipment-card reveal">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1500382017468-9049fee74a52?q=80&w=2070&auto=format&fit=crop" alt="Hybrid Harvester">
+                </div>
+                <div class="card-content">
+                    <span class="tag">Hybrid</span>
+                    <h3>Terra-Flow Harvester</h3>
+                    <p>The world's most efficient combined harvester with precision-grain separation and low fuel consumption.</p>
+                    <a href="#" class="cta-button view-details" 
+                       data-title="Terra-Flow Harvester" 
+                       data-desc="The world's most efficient combined harvester with precision-grain separation and low fuel consumption."
+                       data-specs="Waste Reduction: 22% | Engine: Hybrid Biogas | Capacity: 12,000L"
+                       style="padding: 0.6rem 1.2rem; font-size: 0.9rem;">View Details</a>
+                </div>
+            </div>
+
+            <!-- Drone -->
+            <div class="equipment-card reveal">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1508614589041-895b88991e3e?q=80&w=2070&auto=format&fit=crop" alt="Precision Drone">
+                </div>
+                <div class="card-content">
+                    <span class="tag">Smart Tech</span>
+                    <h3>SkyGuardian Drone V2</h3>
+                    <p>Advanced multispectral sensors for soil health monitoring and precision crop spraying.</p>
+                    <a href="#" class="cta-button view-details" 
+                       data-title="SkyGuardian Drone V2" 
+                       data-desc="Advanced multispectral sensors for soil health monitoring and precision crop spraying."
+                       data-specs="Flight Time: 45m | Coverage: 10 Acres/hr | AI: SoilSense Tech"
+                       style="padding: 0.6rem 1.2rem; font-size: 0.9rem;">View Details</a>
+                </div>
+            </div>
+            
+            <!-- Additional placeholder for row -->
+            <div class="equipment-card reveal">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1592982537447-7440770cbfc9?q=80&w=2070&auto=format&fit=crop" alt="Smart Irrigation">
+                </div>
+                <div class="card-content">
+                    <span class="tag">Irrigation</span>
+                    <h3>HydroSmart System</h3>
+                    <p>Precision AI-controlled irrigation that responds to real-time moisture data and weather forecasts.</p>
+                    <a href="#" class="cta-button view-details" 
+                       data-title="HydroSmart System" 
+                       data-desc="Precision AI-controlled irrigation that responds to real-time moisture data."
+                       data-specs="Water Savings: 35% | AI: WeatherAware | Control: Wireless Hub"
+                       style="padding: 0.6rem 1.2rem; font-size: 0.9rem;">View Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section style="padding: 10rem 5%; text-align: center; background: #f0f4f2;">
+        <h2>Ready to transform your farm?</h2>
+        <p style="margin-bottom: 2.5rem; color: var(--text-muted); font-size: 1.1rem;">Request a demo or get a custom configuration for your specific agricultural needs.</p>
+        <a href="contact.html" class="cta-button" style="padding: 1.2rem 3rem; font-size: 1.1rem;">Talk to an Expert</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h2>ECOHARVEST</h2>
+                <p style="color: var(--text-muted);">Innovating for the next generation of farmers and the planet we share.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Fleet</h4>
+                <ul>
+                    <li><a href="equipment.html">Tractors</a></li>
+                    <li><a href="equipment.html">Harvesters</a></li>
+                    <li><a href="equipment.html">Drones</a></li>
+                    <li><a href="equipment.html">Irrigation</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="about.html">Our Story</a></li>
+                    <li><a href="sustainability.html">Sustainability Report</a></li>
+                    <li><a href="contact.html">Careers</a></li>
+                    <li><a href="contact.html">Press</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Follow Us</h4>
+                <div style="display: flex; gap: 1rem; color: var(--text-muted);">
+                    <i data-lucide="twitter"></i>
+                    <i data-lucide="instagram"></i>
+                    <i data-lucide="linkedin"></i>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2026 EcoHarvest Agricultural Systems. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Auth Modal -->
+    <div class="modal-overlay" id="authModal">
+        <div class="modal-container">
+            <button class="modal-close" id="closeAuth">&times;</button>
+            <div class="auth-box" id="loginBox">
+                <h2>Welcome Back</h2>
+                <p>Enter your details to access your farm dashboard.</p>
+                <form class="auth-form">
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="email" placeholder="name@farm.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" placeholder="••••••••" required>
+                    </div>
+                    <button type="submit" class="cta-button" style="width: 100%;">Sign In</button>
+                </form>
+                <p class="auth-footer">Don't have an account? <a href="#" id="toSignup">Create one</a></p>
+            </div>
+            <div class="auth-box" id="signupBox" style="display: none;">
+                <h2>Start Growing</h2>
+                <p>Join the future of sustainable agriculture.</p>
+                <form class="auth-form">
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="email" placeholder="name@farm.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" placeholder="••••••••" required>
+                    </div>
+                    <button type="submit" class="cta-button" style="width: 100%;">Create Account</button>
+                </form>
+                <p class="auth-footer">Already have an account? <a href="#" id="toLogin">Sign In</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Detail Modal -->
+    <div class="modal-overlay" id="productModal">
+        <div class="modal-container" style="max-width: 600px;">
+            <button class="modal-close" id="closeProduct">&times;</button>
+            <div id="productDetailContent">
+                <!-- Dynamically filled -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Mission | Sustainability at EcoHarvest</title>
+    <meta name="description" content="Learn about EcoHarvest's commitment to the planet. From low-emission machinery to renewable energy, we're building a sustainable future for agriculture.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .page-hero {
+            padding: 12rem 5% 6rem;
+            background: linear-gradient(rgba(40, 145, 108, 0.9), rgba(40, 145, 108, 0.7)), url('https://images.unsplash.com/photo-1500382017468-9049fee74a52?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+        }
+        .page-hero h1 { font-size: 3.5rem; margin-bottom: 1rem; }
+        
+        .sus-grid {
+            padding: 8rem 5%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            background: white;
+        }
+        .sus-card {
+            padding: 3rem;
+            border-radius: 32px;
+            background: #f8f9fa;
+            border: 1px solid #eee;
+            transition: var(--transition);
+        }
+        .sus-card:hover {
+            transform: translateY(-10px);
+            background: white;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.05);
+        }
+        .sus-card i {
+            font-size: 2.5rem;
+            color: var(--sage-green);
+            margin-bottom: 1.5rem;
+            display: block;
+        }
+        .sus-card h3 { margin-bottom: 1rem; color: var(--primary-green); }
+        
+        .impact-section {
+            padding: 10rem 5%;
+            background: var(--primary-green);
+            color: white;
+            text-align: center;
+        }
+        .impact-stats {
+            display: flex;
+            justify-content: center;
+            gap: 5rem;
+            flex-wrap: wrap;
+            margin-top: 4rem;
+        }
+        .impact-item h2 { font-size: 4rem; color: var(--accent-gold); }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="scrolled">
+        <div class="logo">ECOHARVEST</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="equipment.html">Equipment</a></li>
+            <li><a href="sustainability.html" class="active">Sustainability</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+        <div class="nav-actions">
+            <a href="#" class="nav-login" id="openAuth">Sign In</a>
+            <a href="contact.html" class="cta-button">Contact Sales</a>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <header class="page-hero">
+        <h1>Rooted in Sustainability</h1>
+        <p>Our commitment to the planet is integrated into every machine we build.</p>
+    </header>
+
+    <!-- Detailed Goals -->
+    <section class="sus-grid">
+        <div class="sus-card reveal">
+            <i data-lucide="leaf"></i>
+            <h3>Circular Design</h3>
+            <p>We use recycled high-tensile steel and biodegradable hydraulic fluids to ensure our machines leave no trace behind.</p>
+        </div>
+        <div class="sus-card reveal">
+            <i data-lucide="sun"></i>
+            <h3>Renewable Energy</h3>
+            <p>Our manufacturing plant is 100% powered by onsite wind and solar arrays, achieving true industrial carbon neutrality.</p>
+        </div>
+        <div class="sus-card reveal">
+            <i data-lucide="droplets"></i>
+            <h3>Resource Efficiency</h3>
+            <p>EcoHarvest equipment is designed to minimize waste, using precision AI to reduce water and chemical runoff by up to 60%.</p>
+        </div>
+        <div class="sus-card reveal">
+            <i data-lucide="cpu"></i>
+            <h3>Zero-Waste Tech</h3>
+            <p>We offer modular upgrades for all our machinery, extending product life by decades and preventing electronic waste.</p>
+        </div>
+    </section>
+
+    <!-- Impact Stats -->
+    <section class="impact-section">
+        <h2 style="font-size: 2.8rem;">Our Global Impact</h2>
+        <p style="opacity: 0.8; max-width: 600px; margin: 0 auto;">Through the adoption of sustainable practices, we've helped farmers worldwide achieve more with less.</p>
+        
+        <div class="impact-stats">
+            <div class="impact-item reveal">
+                <h2>1.2M</h2>
+                <p>Metric Tons of CO2 Saved</p>
+            </div>
+            <div class="impact-item reveal">
+                <h2>450K</h2>
+                <p>Acres of Soil Protected</p>
+            </div>
+            <div class="impact-item reveal">
+                <h2>85%</h2>
+                <p>Recycled Material Usage</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h2>ECOHARVEST</h2>
+                <p style="color: var(--text-muted);">Innovating for the next generation of farmers and the planet we share.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Fleet</h4>
+                <ul>
+                    <li><a href="equipment.html">Tractors</a></li>
+                    <li><a href="equipment.html">Harvesters</a></li>
+                    <li><a href="equipment.html">Drones</a></li>
+                    <li><a href="equipment.html">Irrigation</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="about.html">Our Story</a></li>
+                    <li><a href="sustainability.html">Sustainability Report</a></li>
+                    <li><a href="contact.html">Careers</a></li>
+                    <li><a href="contact.html">Press</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Follow Us</h4>
+                <div style="display: flex; gap: 1rem; color: var(--text-muted);">
+                    <i data-lucide="twitter"></i>
+                    <i data-lucide="instagram"></i>
+                    <i data-lucide="linkedin"></i>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2026 EcoHarvest Agricultural Systems. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Auth Modal -->
+    <div class="modal-overlay" id="authModal">
+        <div class="modal-container">
+            <button class="modal-close" id="closeAuth">&times;</button>
+            <div class="auth-box" id="loginBox">
+                <h2>Welcome Back</h2>
+                <p>Enter your details to access your farm dashboard.</p>
+                <form class="auth-form">
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="email" placeholder="name@farm.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" placeholder="••••••••" required>
+                    </div>
+                    <button type="submit" class="cta-button" style="width: 100%;">Sign In</button>
+                </form>
+                <p class="auth-footer">Don't have an account? <a href="#" id="toSignup">Create one</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

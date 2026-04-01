@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoHarvest | Sustainable Farm Equipment for the Future</title>
+    <meta name="description" content="EcoHarvest provides premium, sustainable farm equipment including electric tractors, precision drones, and high-efficiency harvesters. Join the future of green agriculture.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="logo">ECOHARVEST</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="equipment.html">Equipment</a></li>
+            <li><a href="sustainability.html">Sustainability</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+        <div class="nav-actions">
+            <a href="#" class="nav-login" id="openAuth">Sign In</a>
+            <button class="cta-button">Contact Sales</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-content">
+            <span class="tag" style="background: rgba(149, 213, 178, 0.2); color: white;">The Future of Farming</span>
+            <h1>Cultivating a Greener Tomorrow.</h1>
+            <p>Empower your farm with high-performance, sustainable machinery designed for the modern ecological landscape.</p>
+            <div class="hero-btns">
+                <a href="#equipment" class="cta-button">View Fleet</a>
+                <a href="#sustainability" class="cta-button" style="background: transparent; border: 2px solid white; margin-left: 1rem;">Our Mission</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Stats Section -->
+    <section class="stats reveal">
+        <div class="stat-item">
+            <h3>98%</h3>
+            <p>Efficiency Rating</p>
+        </div>
+        <div class="stat-item">
+            <h3>40%</h3>
+            <p>Lower Emissions</p>
+        </div>
+        <div class="stat-item">
+            <h3>15+</h3>
+            <p>Countries Served</p>
+        </div>
+        <div class="stat-item">
+            <h3>ZERO</h3>
+            <p>Carbon Footprint Goal</p>
+        </div>
+    </section>
+
+    <!-- Equipment Section -->
+    <section class="equipment" id="equipment">
+        <div class="section-header reveal">
+            <h2>Our Sustainable Fleet</h2>
+            <p>State-of-the-art machinery engineered for maximum output and minimal impact.</p>
+        </div>
+
+        <div class="equipment-grid">
+            <!-- Tractor -->
+            <div class="equipment-card reveal">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1592982537447-7440770cbfc9?q=80&w=2070&auto=format&fit=crop" alt="Electric Tractor">
+                </div>
+                <div class="card-content">
+                    <span class="tag">Electric</span>
+                    <h3>Sovereign-E Tractor</h3>
+                    <p>Fully electric heavy-duty tractor with 12-hour battery life and autonomous navigation capabilities.</p>
+                    <a href="#" class="cta-button view-details" 
+                       data-title="Sovereign-E Tractor" 
+                       data-desc="Fully electric heavy-duty tractor with 12-hour battery life and autonomous navigation capabilities."
+                       data-specs="HP: 450 | Battery: 500kWh | Autonomy: Level 4"
+                       style="padding: 0.6rem 1.2rem; font-size: 0.9rem;">View Details</a>
+                </div>
+            </div>
+
+            <!-- Harvester -->
+            <div class="equipment-card reveal">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1500382017468-9049fee74a52?q=80&w=2070&auto=format&fit=crop" alt="Hybrid Harvester">
+                </div>
+                <div class="card-content">
+                    <span class="tag">Hybrid</span>
+                    <h3>Terra-Flow Harvester</h3>
+                    <p>The world's most efficient combined harvester with precision-grain separation and low fuel consumption.</p>
+                    <a href="#" class="cta-button view-details" 
+                       data-title="Terra-Flow Harvester" 
+                       data-desc="The world's most efficient combined harvester with precision-grain separation and low fuel consumption."
+                       data-specs="Waste Reduction: 22% | Engine: Hybrid Biogas | Capacity: 12,000L"
+                       style="padding: 0.6rem 1.2rem; font-size: 0.9rem;">View Details</a>
+                </div>
+            </div>
+
+            <!-- Drone -->
+            <div class="equipment-card reveal">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1508614589041-895b88991e3e?q=80&w=2070&auto=format&fit=crop" alt="Precision Drone">
+                </div>
+                <div class="card-content">
+                    <span class="tag">Smart Tech</span>
+                    <h3>SkyGuardian Drone V2</h3>
+                    <p>Advanced multispectral sensors for soil health monitoring and precision crop spraying.</p>
+                    <a href="#" class="cta-button view-details" 
+                       data-title="SkyGuardian Drone V2" 
+                       data-desc="Advanced multispectral sensors for soil health monitoring and precision crop spraying."
+                       data-specs="Flight Time: 45m | Coverage: 10 Acres/hr | AI: SoilSense Tech"
+                       style="padding: 0.6rem 1.2rem; font-size: 0.9rem;">View Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sustainability Banner -->
+    <section class="sustainability" id="sustainability">
+        <div class="sus-content reveal">
+            <h2>Committed to Earth.</h2>
+            <p style="margin-bottom: 2rem; opacity: 0.8; font-size: 1.1rem;">We don't just build machines; we build a legacy. Every piece of equipment in our fleet is designed with the planet in mind, using recycled materials and energy-efficient systems.</p>
+            
+            <div class="sus-features">
+                <div class="sus-feature-item">
+                    <i data-lucide="leaf"></i>
+                    <h4>Eco-Materials</h4>
+                    <p>85% of our chassis components are made from recycled carbon steel.</p>
+                </div>
+                <div class="sus-feature-item">
+                    <i data-lucide="battery-charging"></i>
+                    <h4>Solar Ready</h4>
+                    <p>All our electric models can be fast-charged via onsite solar arrays.</p>
+                </div>
+                <div class="sus-feature-item">
+                    <i data-lucide="shield-check"></i>
+                    <h4>Built to Last</h4>
+                    <p>A 20-year operational lifecycle reduces electronic waste significantly.</p>
+                </div>
+                <div class="sus-feature-item">
+                    <i data-lucide="cloud-rain"></i>
+                    <h4>Water Saving</h4>
+                    <p>Our smart sprayers reduce water consumption by up to 35%.</p>
+                </div>
+            </div>
+        </div>
+        <div class="sus-image reveal" style="flex: 0.8;">
+             <img src="https://images.unsplash.com/photo-1500382017468-9049fee74a52?q=80&w=2070&auto=format&fit=crop" alt="Sustainable Farm" style="width: 100%; border-radius: 40px; box-shadow: 20px 20px 60px rgba(0,0,0,0.3);">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h2>ECOHARVEST</h2>
+                <p style="color: var(--text-muted);">Innovating for the next generation of farmers and the planet we share.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Fleet</h4>
+                <ul>
+                    <li><a href="equipment.html">Tractors</a></li>
+                    <li><a href="equipment.html">Harvesters</a></li>
+                    <li><a href="equipment.html">Drones</a></li>
+                    <li><a href="equipment.html">Irrigation</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="about.html">Our Story</a></li>
+                    <li><a href="sustainability.html">Sustainability Report</a></li>
+                    <li><a href="contact.html">Careers</a></li>
+                    <li><a href="contact.html">Press</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Follow Us</h4>
+                <div style="display: flex; gap: 1rem; color: var(--text-muted);">
+                    <i data-lucide="twitter"></i>
+                    <i data-lucide="instagram"></i>
+                    <i data-lucide="linkedin"></i>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2026 EcoHarvest Agricultural Systems. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Auth Modal -->
+    <div class="modal-overlay" id="authModal">
+        <div class="modal-container">
+            <button class="modal-close" id="closeAuth">&times;</button>
+            
+            <div class="auth-box" id="loginBox">
+                <h2>Welcome Back</h2>
+                <p>Enter your details to access your farm dashboard.</p>
+                <form class="auth-form">
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="email" placeholder="name@farm.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" placeholder="••••••••" required>
+                    </div>
+                    <button type="submit" class="cta-button" style="width: 100%;">Sign In</button>
+                </form>
+                <p class="auth-footer">Don't have an account? <a href="#" id="toSignup">Create one</a></p>
+            </div>
+
+            <div class="auth-box" id="signupBox" style="display: none;">
+                <h2>Start Growing</h2>
+                <p>Join the future of sustainable agriculture.</p>
+                <form class="auth-form">
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="email" placeholder="name@farm.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" placeholder="••••••••" required>
+                    </div>
+                    <button type="submit" class="cta-button" style="width: 100%;">Create Account</button>
+                </form>
+                <p class="auth-footer">Already have an account? <a href="#" id="toLogin">Sign In</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Detail Modal -->
+    <div class="modal-overlay" id="productModal">
+        <div class="modal-container" style="max-width: 600px;">
+            <button class="modal-close" id="closeProduct">&times;</button>
+            <div id="productDetailContent">
+                <!-- Dynamically filled -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
